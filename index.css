@@ -332,14 +332,14 @@ body{
 
 .songsListActive{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .songsList #close{
-    position: absolute;
-    left: 95%;
-    margin-top: 10px;
+    position: relative;
+    left: 380px;
+    top: 0;
 
     outline: none;
     border: none;
@@ -347,4 +347,29 @@ body{
     cursor: pointer;
     background: transparent;
 
+}
+
+.song{
+    width: 90%;
+    height: auto;
+
+    border: 2px solid rgba(255, 255, 255, 0.212);
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.song audio{
+    height: 40px;
+}
+
+.song span{
+    color: black;
+    font-weight: bold;
 }
