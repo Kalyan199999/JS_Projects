@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.parentContainer{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    width: 25%;
+    height: 90%;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leftTop{
+    width: 100%;
+    height: 30%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    font-size: 20px;
+
+    background-color: rgba(46, 45, 45, 0.9);
+
+    border-radius: 10px;
+}
+
+.leftTop p{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.leftBottom{
+    width: 100%;
+    height: 70%;
+    color: white;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 5px;
+
+    font-size: 25px;
+
+    background-color: rgba(46, 45, 45, 0.9);
+    /* border: 2px solid red ; */
+}
+
+.leftBottomTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.library{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 20px;
+
+}
+
+.create-playlist{
+    margin: 20px;
+}
+
+.leftBottomdown{
+    width: 100%;
+    height: 40%;
+    /* background-color: white;s */
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.leftBottomBottom{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.leftBottomBottom ul{
+    margin: 20px 20px ;
+    color: rgba(255, 255, 255, 0.336);
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.language{
+    margin: 20px 20px;
+    width: 120px;
+    height: 35px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(46, 45, 45, 0.9);
+    border-radius: 100px;
+    font-size: 20px;
+
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+.right{
+    width: 75%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+}
+
+.rightTop{
+    width: 98%;
+    height: 10%;
+    margin: 10px;
+    margin-bottom: 0;
+    background-color: rgba(46, 45, 45, 0.3);
+    
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 10px;
+
+}
+
+.find{
+    display: none;
+    
+}
+
+.active{
+    display: block;
+}
+
+
+.find input{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.arrow{
+    margin: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.leftArrow:hover,.rightArrow:hover{
+    transform: scale(1.2);
+}
+
+.buttons{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+
+    
+    text-align: center;
+    outline: none;
+
+    font-size: 18px;
+    background-color: white;
+    
+    border: 2px solid white;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.signup{
+    color: white;
+    background-color: rgba(46, 45, 45, 0.3);;
+}
+
+
+.rightBottom{
+    
+    width: 98%;
+    height: 150%;
+    margin: 10px;
+    margin-top: 0;
+    background-color: rgba(46, 45, 45, 0.9);
+    border-radius: 10px;
+
+    position: relative;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+}
+
+.albums{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+    height: 200px;
+
+    /* border: 2px solid red; */
+}
+
+.titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 2px solid white; */
+}
+
+.popular:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.showAll:hover{
+    
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.rightBottomTop h1 {
+    font-size: 20px;
+    
+}
+
+.rightBottomTop:hover{
+    
+    cursor: pointer;
+}
+
+.rightBottomTop h3{
+    font-size: 10px;
+}
+.celebs{
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.c{
+    width: 350px;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    border-radius: 50%;
+}
+
+.c img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.c:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: all 1s ease-in-out 0.2s;
+}
+
+
+.songsList{
+    width: 60vw;
+    height: 80vh;
+    border: 2px solid white;
+    border-radius: 20px;
+
+    display: none;
+
+    position: fixed;
+    top: 55%;
+    left: 60%;
+    translate: -50% -50%;
+
+    background-color: rgba(255, 255, 255, 0.123);
+}
+
+.songsListActive{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.songsList #close{
+    position: absolute;
+    left: 95%;
+    margin-top: 10px;
+
+    outline: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+
+}
